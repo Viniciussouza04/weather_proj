@@ -75,12 +75,14 @@ h1 {
     flex: 1;
     text-align: center;
 }
+
 .tempTitulo,
 .ventoTitulo {
     color: #777;
     font-size: 16px;
     margin-bottom: 5px;
 }
+
 .tempInfo,
 .ventoInfo {
     color: #FFF;
@@ -111,19 +113,29 @@ h1 {
     background-color: #FFF;
     transform-origin: left;
 }
-
 .aviso {
     color: #FFF;
     padding-top: 20px;
+    animation: blinker 1.2s linear infinite;
+}
+.avisoVazio{
+    color: #fff;
+    padding-top: 20px;
+    animation: blinker 1.2s linear infinite;
 }
 
+@keyframes blinker {
+    50%{
+        color: #ff0000;
+    }   
+}
 footer {
     margin-top: 20px;
     color: #FFF;
     font-size: 13px;
 }
-
 footer a{
     text-decoration: none;
-    color: #f55;
+    color: rgb(30, 175, 219);
+    font-size: 14px;
 }
